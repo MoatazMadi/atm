@@ -1,0 +1,56 @@
+
+{
+    "languages": {
+      "pt": "Arabic",
+      "en": "English"
+    },
+    "title": {
+      "forDecoration": "for decoration" ,
+      "someOfOuerWork" : "some of our work"
+    }
+    ,
+    "nav" : {
+      "Home" : "Home" ,
+      "FeaturedProducts" : "Featured Products" ,
+      "PreviousWork" : "Previous Work" ,
+      "Videos" : "Videos" ,
+      "Contact" : "Contact"  ,
+      "VisitOurStore" : "Visit Our Store",
+      "Translatee" : "عربي"
+    }
+    ,
+    "product" : {
+      "GYPSUMBOARD" : "gypsum board" ,
+      "woodAlternative"  : "wood alternative" ,
+      "marbleAlternative" : "marble alternative" ,
+      "futuristic" : "futuristic"
+    }
+    ,
+    "paragraphs" : {
+      "title" : "for decoration",
+      "subTitle" : "Where quality meets expectations." ,
+      "LSfirstP" : "step into our world and discover a vast selection of top-tier products.",
+      "LSsecoundP" : "From exquisite Gypsum Boards to eco-friendly Wood Alternatives, luxurious Marble Alternatives, and cutting-edge Futuristic designs, we offer a spectrum of choices to suit every taste.",
+      "LSthirdP" : " Visit us from Saturday to Thursday in our showroom to experience the example of quality and innovation. and Explore our wide collection of distinctive decorations, available in a all colors.",
+      "LSFourthP" : "    Discover the difference with ATM For Decoration – where every detail matters, and your satisfaction is our priority."
+      ,
+      "RStitle" : "In order to get an idea of our work"
+      ,
+      "RSgelleryTitle" : "exploring our gallery of previous works" ,
+      "RSvideos1" : "For a more immersive experience." ,
+      "RSvideos2" : "journey through our collection of videos" 
+    }
+    ,
+    "Contact" : {
+      "title1" :  "Contact",
+      "title2" :  "Get in Touch",
+      "OurAddress" : "Our Address" ,
+      "Address1" : "Benghazi , Alnahar Road",
+      "Address2" : "close to almesmary Gas Station" ,
+      "mobile" : "Mobile:" ,
+      "WorkingHours" : "Working Hours" ,
+      "WorkingDays" :  "Saturday - Thursday: 09:00 - 20:00" ,
+      "leaveMessage" : "leave message" ,
+      "sendMessage" : "Send"
+    }
+  }

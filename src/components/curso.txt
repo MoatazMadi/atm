@@ -1,0 +1,52 @@
+ <el-carousel class="rounded-md overflow-hidden" :interval="6000" :height="getScreenHegitForSliderCarousel">
+      <el-carousel-item v-for="item in slides" :key="item" >
+        <div
+          class="relative bg-cover bg-no-repeat bg-center w-full h-full "
+            :style=" item.imglink ? { backgroundImage: `url(${item.imglink})` } : '' " >
+
+            <div class="felx h-full ">
+
+                <!-- left ahlf photo -->
+                <div class="w-1/2 relative  min-h-full overflow-hidden ">
+
+                    <img v-show="!item.imglink" class="object-cover min-h-full absolute "  src="../assets/imgs/37851929271_580f451fc5_5k.jpg" alt="">
+                </div>
+
+                <!-- right side text -->
+
+                <div class="w-1/2">
+                    <h3 class="small justify-center" text="2xl">{{ item.mainText }}</h3>
+
+                </div>
+
+            </div>
+
+        </div>
+      </el-carousel-item>
+    </el-carousel>
+
+
+    const getScreenHegitForSliderCarousel = (window.innerHeight*0.8) + "px"
+
+<style scoped>
+.demonstration {
+  color: var(--el-text-color-secondary);
+}
+
+.el-carousel__item h3 {
+  color: #475669;
+  opacity: 0.75;
+  line-height: 150px;
+  margin: 0;
+  text-align: center;
+}
+
+.el-carousel__item:nth-child(2n) {
+  background-color: #99a9bf;
+}
+
+.el-carousel__item:nth-child(2n + 1) {
+  background-color: #d3dce6;
+}
+</style>
+
