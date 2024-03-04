@@ -176,7 +176,7 @@
                                             {{ $t('paragraphs.subTitle') }}
                                         </span> 
                                     </h2>
-                                    <div class="ml-4 italic  text-gray-800 dark:text-white  flex flex-col gap-3
+                                    <div class="ml-4 italic text-gray-800 dark:text-white  flex flex-col gap-6 sm:gap-8 lg:gap-10 mt-8
                                                     capitalize w-full text-md  leading-8
                                                     dark:drop-shadow-3xlB md:rtl:text-lg                                                    "
                                                      >
@@ -498,6 +498,10 @@ const ProdTranslate = (local)=>{
     }
 }
 
+
+// ##
+// unComment the else{}
+// to make the page reflech on the brouser language of the user
 onBeforeMount(()=>{
     // Detect Lang
     if(navigator.language == "ar"){
@@ -507,14 +511,14 @@ onBeforeMount(()=>{
         document.documentElement.style.fontFamily = 'cairo,"Roboto", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"'   
     }
         else {
-        locale.value = 'en'
-        document.documentElement.style.direction = "ltr"
-        document.documentElement.lang = "en"
-        document.documentElement.style.fontFamily = '"Roboto", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"';  
-        cards[0].title = "gypsum board"
-        cards[1].title = "wood alternative"
-        cards[2].title = "marble alternative"
-        cards[3].title = "futuristic"
+        // locale.value = 'en'
+        // document.documentElement.style.direction = "ltr"
+        // document.documentElement.lang = "en"
+        // document.documentElement.style.fontFamily = '"Roboto", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"';  
+        // cards[0].title = "gypsum board"
+        // cards[1].title = "wood alternative"
+        // cards[2].title = "marble alternative"
+        // cards[3].title = "futuristic"
     }
 })
 

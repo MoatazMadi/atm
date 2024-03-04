@@ -51,6 +51,18 @@
       "WorkingHours" : "Working Hours" ,
       "WorkingDays" :  "Saturday - Thursday: 09:00 - 20:00" ,
       "leaveMessage" : "leave message" ,
+      "yourName" : "your name" ,
+      "yourEmail" : "Your email address" ,
+      "WriteYourMessage" : "Write your message..." ,
       "sendMessage" : "Send"
+    }
+    ,
+    "Footer" : {
+      "Home" : "Home",
+      "Contact" :  "Contact",
+      "FeaturedProducts" :"Featured Products" ,
+      "videosGallery" : "videos gallery" ,
+      "someOfOurWork" : "some of our work" ,
+      "OurStore" : "Our Store" 
     }
   }

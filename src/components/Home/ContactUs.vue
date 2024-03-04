@@ -123,7 +123,7 @@
                                             <span>
                                                 {{ $t('Contact.mobile') }}
                                             </span>
-                                            <span   >
+                                            <span  class="ltr inline-block mx-1" >
                                                 091-5732894
                                             </span>
 
@@ -204,8 +204,8 @@
                                                     type="text"
                                                     id="name"
                                                     autocomplete="given-name"
-                                                    placeholder="Your name"
-                                                    class="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"
+                                                    :placeholder="$t('Contact.yourName')"
+                                                    class="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md  sm:mb-0"
                                                     name="name"
                                                 />
                                             </div>
@@ -218,8 +218,8 @@
                                                     type="email"
                                                     id="email"
                                                     autocomplete="email"
-                                                    placeholder="Your email address"
-                                                    class="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"
+                                                    :placeholder="$t('Contact.yourEmail')"
+                                                    class="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md  sm:mb-0"
                                                     name="email"
                                                 />
                                             </div>
@@ -234,8 +234,8 @@
                                                 name="textarea"
                                                 cols="30"
                                                 rows="5"
-                                                placeholder="Write your message..."
-                                                class="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0"
+                                                :placeholder="$t('Contact.WriteYourMessage')"
+                                                class="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md  sm:mb-0"
                                             ></textarea>
                                         </div>
                                     </div>

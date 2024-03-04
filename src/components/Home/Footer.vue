@@ -155,38 +155,54 @@
                 </a>
                 <p class="my-6 mt-0 md:mt-1 md:text-2xl text-atm-blue brightness-200
                                     contrast-100  capitalize">
-                    for decoration
+                    {{ $t('title.forDecoration') }}
                 </p>
                 <ul
                     class="flex flex-wrap justify-center items-center mb-6 text-gray-400 dark:text-gray-500"
                 >
                     <li>
-                        <router-link class="mr-4 hover:underline md:mr-6" :to="{ name:'home'}">Home</router-link>
+                        <router-link class="mr-4 hover:underline md:mr-6" :to="{ name:'home'}">
+                            {{ $t("Footer.Home") }}
+
+                        </router-link>
                     </li>
                     <li>
                         <a href="#Featuredproducts" class="mr-4 hover:underline md:mr-6"
-                            >Featured Products</a
+                            >
+                            {{ $t("Footer.FeaturedProducts") }}
+                            </a
                         >
                     </li>
                     <li>
                        
-                        <router-link class="mr-4 hover:underline md:mr-6" :to="{ name:'videos'}">videos gallery</router-link>
+                        <router-link class="mr-4 hover:underline md:mr-6" :to="{ name:'videos'}">
+                        {{ $t('Footer.videosGallery') }}
+                        </router-link>
 
                     </li>
                     <li>
                         <a href="#previouswork" class="mr-4 hover:underline md:mr-6"
-                            >some of our work</a
+                            >
+                            {{ $t("Footer.someOfOurWork") }}
+                        
+                            </a
                         >
                     </li>
                     <li>
                         <a href="#" class="mr-4 hover:underline md:mr-6"
-                            >Our Store</a
+                            >
+                            {{ $t("Footer.OurStore") }}
+                            
+                            </a
                         >
                     </li>
 
                     <li>
                         <a href="#contactus" class="mr-4 hover:underline md:mr-6"
-                            >Contact</a
+                            >
+                            {{ $t("Footer.Contact") }}
+                            
+                            </a
                         >
                     </li>
                 </ul>

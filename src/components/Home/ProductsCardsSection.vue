@@ -26,7 +26,7 @@
             hover:shadow-lg hover:scale-105
             max-w-xs sm:max-w-md mx-auto
           ">
-    <a  class="block relative">
+    <a :href="card.imageUrl"  class="block relative">
       <img lazy-load loading="lazy" class=" rounded-lg w-full  object-cover h-96 sm:h-[70vh] md:h-[80vh] transition-opacity duration-500 ease-in-out" :src="card.imageUrl" alt="" />
       <div class="absolute bottom-0 w-full  h-1/4 hover:h-full hover:bg-opacity-45 bg-opacity-65 bg-black flex justify-center items-center transition-all duration-1000">
         <a  class="block">

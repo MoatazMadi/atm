@@ -52,6 +52,18 @@
       "WorkingHours" : "ساعات العمل" ,
       "WorkingDays" :  "السبت - الخميس : 09:00 - 20:00" ,
       "leaveMessage" : "اترك رسالة" ,
+      "yourName" : "الاسم" ,
+      "yourEmail" : "بريدك الالكتروني" ,
+      "WriteYourMessage" : "اكتب رسالتك ..." ,
       "sendMessage" : "ارسال"
+    } 
+    ,
+    "Footer" : {
+      "Home" : "الرئيسية",
+      "Contact" :  "تواصل معنا",
+      "FeaturedProducts" :"المنتجات المميزة" ,
+      "videosGallery" : "معرض الفيديوهات" ,
+      "someOfOurWork" : "صور اعمال سابقة" ,
+      "OurStore" : "متجرنا" 
     }
   }
