@@ -16,17 +16,17 @@
         class="flex flex-wrap justify-center items-center mb-6 text-gray-400 dark:text-gray-500"
       >
         <li>
-          <router-link
+          <!-- <router-link
             class="mr-4 hover:underline md:mr-6"
-            :to="{ name: 'home' }"
+            :to="{ name: 'home'  }"
           >
             {{ $t("Footer.Home") }}
-          </router-link>
+          </router-link> -->
         </li>
         <li>
-          <a href="#Featuredproducts" class="mr-4 hover:underline md:mr-6">
+          <router-link class="mr-4 hover:underline md:mr-6" :to="{ name: 'home', hash: '#Featuredproducts' }">
             {{ $t("Footer.FeaturedProducts") }}
-          </a>
+          </router-link>
         </li>
         <li>
           <router-link
@@ -37,9 +37,9 @@
           </router-link>
         </li>
         <li>
-          <a href="#previouswork" class="mr-4 hover:underline md:mr-6">
-            {{ $t("Footer.someOfOurWork") }}
-          </a>
+            <router-link class="mr-4 hover:underline md:mr-6" :to="{ name: 'home', hash: '#previouswork' }">
+                {{ $t("Footer.someOfOurWork") }}
+              </router-link>
         </li>
         <li>
           <a href="#" class="mr-4 hover:underline md:mr-6">
@@ -48,9 +48,10 @@
         </li>
 
         <li>
-          <a href="#contactus" class="mr-4 hover:underline md:mr-6">
-            {{ $t("Footer.Contact") }}
-          </a>
+      
+          <router-link class="mr-4 hover:underline md:mr-6" :to="{ name: 'home', hash: '#contactus' }">
+                 {{ $t("Footer.Contact") }}
+              </router-link>
         </li>
       </ul>
       <span

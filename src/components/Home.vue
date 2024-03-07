@@ -1,286 +1,286 @@
 <template>
   <div class="bg-slate-50 dark:bg-gray-900 min-h-screen">
     <!-- Header with Hero -->
-    <div>
-      <!-- Move to top Button -->
-      <el-backtop
-        title="Go Top"
-        :right="50"
-        :bottom="50"
-        :visibility-height="500"
-      />
-
-      <header class="h-screen relative">
-        <!-- Nav Bar -->
-        <NavBar
-          @switch-language="switchLang"
-          class="bg-gray-950 sticky top-0 w-full z-20"
+      <div>
+        <!-- Move to top Button -->
+        <el-backtop
+          title="Go Top"
+          :right="50"
+          :bottom="50"
+          :visibility-height="500"
         />
 
-        <!-- Hero section -->
-        <section
-          class="h-full w-full relative bg-fixed bg-gray-950 bg-right bg-contain bg-no-repeat bg-blend-overlay overflow-hidden"
-        >
-          <!-- The  Main Text [ATM For decoration] -->
-          <div class="flex z-30 justify-center w-full h-full">
-            <div class="translate-y-[35%]">
-              <h1
-                class="text-2xl text-center mainTextAnimate sm:text-3xl md:text-5xl lg:text-8xl capitalize brightness-200 contrast-100 px-5 rounded-md text-atm-blue"
-                style=""
-              >
-                <span
-                  class="uppercase brightness-50 contrast-100 text-atm-yellow"
-                  >a.t.m</span
-                >
-                <br />
-                {{ $t("title.forDecoration") }}
-              </h1>
-            </div>
-          </div>
+        <header class="h-screen relative">
+          <!-- Nav Bar -->
+          <NavBar
+            @switch-language="switchLang"
+            class="bg-gray-950 sticky top-0 w-full z-20"
+          />
 
-          <!-- top 3 coloredlines -->
-          <div
-            class="absolute ShapeRightInAnimate duration-1000 top-[3%] translate-x-[50%] h-2 w-[120%] bg-atm-blue rounded-full brightness-150 contrast-150"
-          ></div>
-          <div
-            class="absolute ShapeRightInAnimate top-[5%] translate-x-[40%] h-2 w-[120%] bg-atm-yellow rounded-full brightness-150 contrast-150"
-          ></div>
-          <div
-            class="absolute ShapeRightInAnimate top-[7%] translate-x-[30%] h-2 w-[120%] bg-atm-blue rounded-full brightness-150 contrast-150"
-          ></div>
-          <!--  the mid coloredlines -->
-
-          <div
-            class="absolute ShapeLeftInAnimate top-[27%] transition-all -translate-x-[40%] h-10 w-[120%] bg-atm-blue rounded-full sm:-translate-x-[50%] brightness-200 contrast-100"
-          ></div>
-          <div
-            class="absolute ShapeRightInAnimate top-[50%] translate-x-[40%] h-10 w-[120%] bg-atm-yellow rounded-full sm:top-[51%] sm:translate-x-[57%] md:top-[55%] lg:top-[68%] contrast-brightness-200 brightness-100"
-          ></div>
-          <!--  -->
-          <!-- bottom coloredlines -->
-          <div
-            class="absolute ShapeLeftInAnimate top-[82%] -translate-x-[35%] h-2 w-[120%] bg-atm-blue rounded-full brightness-150 contrast-150"
-          ></div>
-          <div
-            class="absolute ShapeLeftInAnimate top-[80%] -translate-x-[45%] h-2 w-[120%] bg-atm-yellow rounded-full brightness-150 contrast-150"
-          ></div>
-          <!--  -->
-          <!--  -->
-        </section>
-      </header>
-      <!-- End Header with Hero -->
-
-      <!-- Main Body -->
-      <main>
-        <!-- the real main -->
-        <div class="">
-          <!-- first section -->
-          <!-- our broducts [Special Products] -->
+          <!-- Hero section -->
           <section
-            detect="Products"
-            id="Featuredproducts"
-            ref="detectProducts"
-            class="relative mt-32 md:mt-40 min-h-96 overflow-hidden"
+            class="h-full w-full relative bg-fixed bg-gray-950 bg-right bg-contain bg-no-repeat bg-blend-overlay overflow-hidden"
           >
-            <!-- content container -->
-            <div class="container">
-              <!--  [cards] Component -->
-              <Transition name="">
-                <div class="relative z-20" v-if="showProducts">
+            <!-- The  Main Text [ATM For decoration] -->
+            <div class="flex z-30 justify-center w-full h-full">
+              <div class="translate-y-[35%]">
+                <h1
+                  class="text-2xl text-center mainTextAnimate sm:text-3xl md:text-5xl lg:text-8xl capitalize brightness-200 contrast-100 px-5 rounded-md text-atm-blue"
+                  style=""
+                >
+                  <span
+                    class="uppercase brightness-50 contrast-100 text-atm-yellow"
+                    >a.t.m</span
+                  >
+                  <br />
+                  {{ $t("title.forDecoration") }}
+                </h1>
+              </div>
+            </div>
+
+            <!-- top 3 coloredlines -->
+            <div
+              class="absolute ShapeRightInAnimate duration-1000 top-[3%] translate-x-[50%] h-2 w-[120%] bg-atm-blue rounded-full brightness-150 contrast-150"
+            ></div>
+            <div
+              class="absolute ShapeRightInAnimate top-[5%] translate-x-[40%] h-2 w-[120%] bg-atm-yellow rounded-full brightness-150 contrast-150"
+            ></div>
+            <div
+              class="absolute ShapeRightInAnimate top-[7%] translate-x-[30%] h-2 w-[120%] bg-atm-blue rounded-full brightness-150 contrast-150"
+            ></div>
+            <!--  the mid coloredlines -->
+
+            <div
+              class="absolute ShapeLeftInAnimate top-[27%] transition-all -translate-x-[40%] h-10 w-[120%] bg-atm-blue rounded-full sm:-translate-x-[50%] brightness-200 contrast-100"
+            ></div>
+            <div
+              class="absolute ShapeRightInAnimate top-[50%] translate-x-[40%] h-10 w-[120%] bg-atm-yellow rounded-full sm:top-[51%] sm:translate-x-[57%] md:top-[55%] lg:top-[68%] contrast-brightness-200 brightness-100"
+            ></div>
+            <!--  -->
+            <!-- bottom coloredlines -->
+            <div
+              class="absolute ShapeLeftInAnimate top-[82%] -translate-x-[35%] h-2 w-[120%] bg-atm-blue rounded-full brightness-150 contrast-150"
+            ></div>
+            <div
+              class="absolute ShapeLeftInAnimate top-[80%] -translate-x-[45%] h-2 w-[120%] bg-atm-yellow rounded-full brightness-150 contrast-150"
+            ></div>
+            <!--  -->
+            <!--  -->
+          </section>
+        </header>
+        <!-- End Header with Hero -->
+
+        <!-- Main Body -->
+        <main>
+          <!-- the real main -->
+          <div class="">
+            <!-- first section -->
+            <!-- our broducts [Special Products] -->
+            <section
+              detect="Products"
+              id="Featuredproducts"
+              ref="detectProducts"
+              class="relative mt-32 md:mt-40 min-h-96 overflow-hidden"
+            >
+              <!-- content container -->
+              <div class="container">
+                <!--  [cards] Component -->
+                <Transition name="">
+                  <div class="relative z-20" v-if="showProducts">
+                    <h2
+                      class="text-3xl sm:text-4xl md:text-5xl text-center mb-6 capitalize"
+                    >
+                      {{ $t("nav.FeaturedProducts") }}
+                    </h2>
+                    <!-- cards container  -->
+                    <div
+                      class="grid pb-12 bg-transparent grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5"
+                    >
+                      <div v-for="(card, index) in cards" :key="card.id">
+                        <!-- cards component  -->
+                        <Transition name="bounce">
+                          <ProductsCardsSection
+                            :style="{ 'transition-delay': index * 400 + 'ms' }"
+                            :card="card"
+                            :Title="card.title"
+                          />
+                        </Transition>
+                      </div>
+                    </div>
+                  </div>
+                </Transition>
+              </div>
+            </section>
+
+            <!-- Test Section [Main Text (Description)] -->
+
+            <section
+              detect=""
+              ref=""
+              class="relative bg-slate-300 dark:bg-slate-800 py-12 mt-5 md:mt-10 overflow-hidden"
+              style="min-height: 80vh"
+            >
+              <div class="container h-full">
+                <div class="flex flex-col gap-12 lg:gap-24 lg:flex-row h-full">
+                  <!-- Left Side -->
+                  <div class="flex-1 p-1 py-2 z-20">
+                    <h2
+                      class="capitalize mb-3 font-bold italic text-gray-950 dark:text-gray-50"
+                    >
+                      <span class="text-2xl">
+                        <span> ATM </span>
+                        <span>
+                          {{ $t("paragraphs.title") }}
+                        </span>
+                      </span>
+                      <br />
+                      <span class="text-sm indent-4 block">
+                        {{ $t("paragraphs.subTitle") }}
+                      </span>
+                    </h2>
+                    <div
+                      class="ml-4 italic text-gray-800 dark:text-white flex flex-col gap-6 sm:gap-8 lg:gap-10 mt-8 capitalize w-full text-md leading-8 dark:drop-shadow-3xlB md:rtl:text-lg"
+                    >
+                      <p>
+                        {{ $t("paragraphs.LSfirstP") }}
+                      </p>
+                      <p>
+                        {{ $t("paragraphs.LSsecoundP") }}
+                      </p>
+
+                      <p>
+                        {{ $t("paragraphs.LSthirdP") }}
+                      </p>
+                      <p>
+                        {{ $t("paragraphs.LSFourthP") }}
+                      </p>
+                    </div>
+                  </div>
+                  <!-- Right Side -->
+                  <div class="p-4 z-20 capitalize italic">
+                    <h2
+                      class="text-2xl text-gray-950 dark:text-gray-50 font-bold mb-8 text-center"
+                    >
+                      {{ $t("paragraphs.RStitle") }}
+                    </h2>
+                    <div class="flex flex-col justify-evenly h-full">
+                      <div class="self-center w-full">
+                        <div class="flex flex-col mb-8">
+                          <h2
+                            class="text-base text-center dark:text-white dark:drop-shadow-3xlB md:rtl:text-lg"
+                          >
+                            {{ $t("paragraphs.RSgelleryTitle") }}
+                          </h2>
+                          <router-link
+                            :to="{ name: 'home', hash: '#previouswork' }"
+                            class="size-16 self-center hover:scale-105 hover:animate-spin transition-all flex border-2 border-atm-blue bg-slate-200 rounded-md my-4 justify-center items-center hover:bg-atm-blue group"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke-width="1.5"
+                              stroke="currentColor"
+                              class="size-12 stroke-atm-blue group-hover:stroke-atm-yellow hover:animate-ping"
+                            >
+                              >
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                              />
+                            </svg>
+                          </router-link>
+                        </div>
+                      </div>
+
+                      <div class="self-center w-full">
+                        <div class="flex flex-col">
+                          <h2
+                            class="text-base text-center dark:text-white dark:drop-shadow-3xlB md:rtl:text-lg"
+                          >
+                            {{ $t("paragraphs.RSvideos1") }} <br />{{
+                              $t("paragraphs.RSvideos2")
+                            }}
+                          </h2>
+                          <router-link
+                            :to="{ name: 'videos' }"
+                            class="size-16 self-center hover:scale-105 hover:animate-spin transition-all flex border-2 border-atm-blue bg-slate-200 rounded-md my-4 justify-center items-center hover:bg-atm-blue group"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke-width="1.5"
+                              stroke="currentColor"
+                              class="size-12 stroke-atm-blue group-hover:stroke-atm-yellow hover:animate-ping rotate-45"
+                            >
+                              >
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="m4.5 15.75 7.5-7.5 7.5 7.5"
+                              />
+                            </svg>
+                          </router-link>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <!-- our previes work -->
+            <!-- carosusel [cards] Component -->
+            <!-- Updated -->
+            <section
+              detect="PreWork"
+              ref="detectPreWork"
+              id="previouswork"
+              class="mt-9 md:mt-20 min-h-96"
+            >
+              <Transition name="fade">
+                <div v-if="showPreWork">
                   <h2
                     class="text-3xl sm:text-4xl md:text-5xl text-center mb-6 capitalize"
                   >
-                    {{ $t("nav.FeaturedProducts") }}
+                    {{ $t("title.someOfOuerWork") }}
                   </h2>
-                  <!-- cards container  -->
-                  <div
-                    class="grid pb-12 bg-transparent grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5"
+                  <el-carousel
+                    :type="carouselType"
+                    :interval="105500"
+                    :arrow="carouselArrows"
+                    :height="getScreenHegitForSliderCarousel"
+                    :indicator-position="'none'"
+                    :pause-on-hover="false"
+                    class="max-w-full w-full overflow-hidden"
                   >
-                    <div v-for="(card, index) in cards" :key="card.id">
-                      <!-- cards component  -->
-                      <Transition name="bounce">
-                        <ProductsCardsSection
-                          :style="{ 'transition-delay': index * 400 + 'ms' }"
-                          :card="card"
-                          :Title="card.title"
+                    <div v-for="(slide, index) in slides" :key="index">
+                      <Transition
+                        name="bounce"
+                        :style="{ 'transition-delay': index * 25 + 'ms' }"
+                      >
+                        <PreviesWork
+                          class="sm:rounded-lg"
+                          :imgUrl="`${myProdHost}/assets/imgs/prework/${slide}.jpeg`"
                         />
                       </Transition>
                     </div>
-                  </div>
+                  </el-carousel>
                 </div>
               </Transition>
-            </div>
-          </section>
+            </section>
+          </div>
+        </main>
 
-          <!-- Test Section [Main Text (Description)] -->
+        <!-- Contact Us -->
+        <section id="contactus" class="mt-20">
+          <ContactUs />
+        </section>
 
-          <section
-            detect=""
-            ref=""
-            class="relative bg-slate-300 dark:bg-slate-800 py-12 mt-5 md:mt-10 overflow-hidden"
-            style="min-height: 80vh"
-          >
-            <div class="container h-full">
-              <div class="flex flex-col gap-12 lg:gap-24 lg:flex-row h-full">
-                <!-- Left Side -->
-                <div class="flex-1 p-1 py-2 z-20">
-                  <h2
-                    class="capitalize mb-3 font-bold italic text-gray-950 dark:text-gray-50"
-                  >
-                    <span class="text-2xl">
-                      <span> ATM </span>
-                      <span>
-                        {{ $t("paragraphs.title") }}
-                      </span>
-                    </span>
-                    <br />
-                    <span class="text-sm indent-4 block">
-                      {{ $t("paragraphs.subTitle") }}
-                    </span>
-                  </h2>
-                  <div
-                    class="ml-4 italic text-gray-800 dark:text-white flex flex-col gap-6 sm:gap-8 lg:gap-10 mt-8 capitalize w-full text-md leading-8 dark:drop-shadow-3xlB md:rtl:text-lg"
-                  >
-                    <p>
-                      {{ $t("paragraphs.LSfirstP") }}
-                    </p>
-                    <p>
-                      {{ $t("paragraphs.LSsecoundP") }}
-                    </p>
-
-                    <p>
-                      {{ $t("paragraphs.LSthirdP") }}
-                    </p>
-                    <p>
-                      {{ $t("paragraphs.LSFourthP") }}
-                    </p>
-                  </div>
-                </div>
-                <!-- Right Side -->
-                <div class="p-4 z-20 capitalize italic">
-                  <h2
-                    class="text-2xl text-gray-950 dark:text-gray-50 font-bold mb-8 text-center"
-                  >
-                    {{ $t("paragraphs.RStitle") }}
-                  </h2>
-                  <div class="flex flex-col justify-evenly h-full">
-                    <div class="self-center w-full">
-                      <div class="flex flex-col mb-8">
-                        <h2
-                          class="text-base text-center dark:text-white dark:drop-shadow-3xlB md:rtl:text-lg"
-                        >
-                          {{ $t("paragraphs.RSgelleryTitle") }}
-                        </h2>
-                        <router-link
-                          :to="{ name: 'home', hash: '#previouswork' }"
-                          class="size-16 self-center hover:scale-105 hover:animate-spin transition-all flex border-2 border-atm-blue bg-slate-200 rounded-md my-4 justify-center items-center hover:bg-atm-blue group"
-                        >
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke-width="1.5"
-                            stroke="currentColor"
-                            class="size-12 stroke-atm-blue group-hover:stroke-atm-yellow hover:animate-ping"
-                          >
-                            >
-                            <path
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              d="m19.5 8.25-7.5 7.5-7.5-7.5"
-                            />
-                          </svg>
-                        </router-link>
-                      </div>
-                    </div>
-
-                    <div class="self-center w-full">
-                      <div class="flex flex-col">
-                        <h2
-                          class="text-base text-center dark:text-white dark:drop-shadow-3xlB md:rtl:text-lg"
-                        >
-                          {{ $t("paragraphs.RSvideos1") }} <br />{{
-                            $t("paragraphs.RSvideos2")
-                          }}
-                        </h2>
-                        <router-link
-                          :to="{ name: 'videos' }"
-                          class="size-16 self-center hover:scale-105 hover:animate-spin transition-all flex border-2 border-atm-blue bg-slate-200 rounded-md my-4 justify-center items-center hover:bg-atm-blue group"
-                        >
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke-width="1.5"
-                            stroke="currentColor"
-                            class="size-12 stroke-atm-blue group-hover:stroke-atm-yellow hover:animate-ping rotate-45"
-                          >
-                            >
-                            <path
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              d="m4.5 15.75 7.5-7.5 7.5 7.5"
-                            />
-                          </svg>
-                        </router-link>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <!-- our previes work -->
-          <!-- carosusel [cards] Component -->
-          <!-- Updated -->
-          <section
-            detect="PreWork"
-            ref="detectPreWork"
-            id="previouswork"
-            class="mt-9 md:mt-20 min-h-96"
-          >
-            <Transition name="fade">
-              <div v-if="showPreWork">
-                <h2
-                  class="text-3xl sm:text-4xl md:text-5xl text-center mb-6 capitalize"
-                >
-                  {{ $t("title.someOfOuerWork") }}
-                </h2>
-                <el-carousel
-                  :type="carouselType"
-                  :interval="105500"
-                  :arrow="carouselArrows"
-                  :height="getScreenHegitForSliderCarousel"
-                  :indicator-position="'none'"
-                  :pause-on-hover="false"
-                  class="max-w-full w-full overflow-hidden"
-                >
-                  <div v-for="(slide, index) in slides" :key="index">
-                    <Transition
-                      name="bounce"
-                      :style="{ 'transition-delay': index * 25 + 'ms' }"
-                    >
-                      <PreviesWork
-                        class="sm:rounded-lg"
-                        :imgUrl="`${myProdHost}/assets/imgs/prework/${slide}.jpeg`"
-                      />
-                    </Transition>
-                  </div>
-                </el-carousel>
-              </div>
-            </Transition>
-          </section>
-        </div>
-      </main>
-
-      <!-- Contact Us -->
-      <section id="contactus" class="mt-20">
-        <ContactUs />
-      </section>
-
-      <!--  & footer -->
-      <Footer />
-    </div>
+        <!--  & footer -->
+        <Footer />
+      </div>
   </div>
 </template>
 
@@ -475,6 +475,7 @@ onMounted(() => {
 
     observer.observe(section.value);
   });
+
 });
 </script>
 
@@ -614,5 +615,21 @@ h2 {
   50% {
     opacity: 0.5;
   }
+}
+
+
+.main-enter-active,
+.main-leave-active {
+  transition: all 400ms ease-in;
+  /* animation : Appear-category-section 3.5s ease */
+}
+
+.main-enter-from,
+.main-leave-to {
+  opacity: 0;
+  transform: translateY(-200px);
+
+  /* transform: translateY(-400px) scale(0); */
+  /* transform: translate(-50%); */
 }
 </style>

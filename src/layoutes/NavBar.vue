@@ -18,9 +18,9 @@
             </li>
 
             <li>
-              <router-link :to="{ name: 'home', hash: '#previouswork' }">{{
-                $t("nav.PreviousWork")
-              }}</router-link>
+                <router-link :to="{ name: 'home', hash: '#previouswork' }">{{
+                  $t("nav.PreviousWork")
+                }}</router-link>
             </li>
             <li>
               <router-link :to="{ name: 'videos' }">{{

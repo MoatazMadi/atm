@@ -19,6 +19,7 @@ export default {
         },
         dropShadow: {
             '3xlB': '4px 4px 5px black',
+            '3xATM': '1px 1px 2px rgb(20,77,94)',
             '3xlW': '4px 4px 5px white',
             '4xl': [
                 '0 35px 35px rgba(0, 0, 0, 0.25)',

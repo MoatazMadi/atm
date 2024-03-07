@@ -1,5 +1,6 @@
 <template>
-      <el-carousel-item  v-if="show">
+        
+      <el-carousel-item   v-if="show">
         <video preload="none"  controls  class="h-full
          object-center   m-0 p-0  w-full
         " >

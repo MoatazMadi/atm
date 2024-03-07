@@ -6,6 +6,7 @@
         :autoplay="false"
         height="88.8vh"
         arrow="always"
+        @change="console.log(this)"
         indicator-position="none"
         class="max-w-full w-full"
       >
@@ -32,7 +33,7 @@ const components = {
 
 const myProdHost = import.meta.env.VITE_MY_BASE_URL;
 
-console.log(myProdHost);
+// console.log(myProdHost);
 
 const videos = [
   { source: `${myProdHost}/assets/videos/1.mp4` },
@@ -42,4 +43,6 @@ const videos = [
   { source: `${myProdHost}/assets/videos/5.mp4` },
   { source: `${myProdHost}/assets/videos/6.mp4` },
 ];
+
+
 </script>
